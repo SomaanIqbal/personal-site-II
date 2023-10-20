@@ -1,6 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 a {
     border: 2px solid black;
-    font-size: 20px;
+    font-size: 1.5rem;
+}
+a:hover{
+    font-size: larger;
+    background-color: chartreuse;
 }
 .name {
     float: right;
@@ -20,15 +27,60 @@ h1{
     text-align: center;
 }
 .singleCategory {
-   border: 2px solid black ;
+   border: 0.5rem solid black ;
    margin: 5px;
    padding: 10px;
    background-color:lemonchiffon;
 }
 .allCategories{
     display: flex;
+    
+
 }
 footer {
     background-color: pink;
     text-align: center;
+}
+p {
+    border: 0.5rem solid black;
+}
+p:hover{
+    background-color:beige;
+    transition-delay: 0.5s;
+    font-size: large;
+    
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+#message {
+    width: 60rem;
+}
+.submit{
+    margin: 5px;
+    padding: 10px;
+}
+
+.successTitle {
+    font-size: 100px;
+    margin-top: calc(10% - 10px);
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+    
+
+@media (max-width:680px) {
+    .allCategories {
+        flex-direction: column;
+    }
+    .singleCategory {
+        background-color: burlywood;
+    }
 }
